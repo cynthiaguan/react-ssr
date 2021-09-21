@@ -1,0 +1,36 @@
+{
+  "name": "test-ssr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve ",
+    "dev": "webpack-dev-server --mode development",
+    "dev:server": "nodemon --inspect build/bundle.js",
+    "dev:build:server": "webpack --mode development --config webpack.server.config.js --watch",
+    "dev:build:client": "webpack --mode development --config webpack.client.config.js --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "@babel/preset-react": "^7.14.5",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.0",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.0.0",
+    "html-webpack-plugin": "^4.5.0",
+    "nodemon": "^2.0.12",
+    "react-refresh": "^0.10.0",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.53.0",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.2.1",
+    "webpack-node-externals": "^3.0.0"
+  }
+}
